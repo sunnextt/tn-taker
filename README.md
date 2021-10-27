@@ -93,43 +93,9 @@ Go to `localhost:5000` to view the app.
 
 To seed the app with some test data, paste the contents of `seed.js` into your browser console.
 
-## Testing
-
-Run unit and component/integration tests.
-
-```bash
-npm run test
-```
-
-> If using Jest Runner in VSCode, add `"jestrunner.configPath": "config/jest.config.js"` to your settings
-
-Run Cypress end-to-end tests.
-
-```bash
-# In one window, run the application
-npm run client
-
-# In another window, run the end-to-end tests
-npm run test:e2e:open
-```
-
-## Contributing
-
-TakeNote is an open source project, and contributions of any kind are welcome and appreciated. Open issues, bugs, and feature requests are all listed on the [issues](https://github.com/taniarascia/takenote/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests. Easy bugs and features will be tagged with the `good first issue` label.
-
-View [CONTRIBUTING.md](CONTRIBUTING.md) to learn about the style guide, folder structure, scripts, and how to contribute.
-
-## Contributors
-
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## Acknowledgements
-
-- A big thank you to [David Bock](https://dkbock.com/) for logo design.
-
 ## Author
-
 
 ## License
 

@@ -62,9 +62,6 @@ export const LandingPage: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="container">
-          <img src={lightScreen} alt="TakeNote App" className="screenshot" />
-        </div>
       </section>
 
       <section className="content">
@@ -84,8 +81,7 @@ export const LandingPage: React.FC = () => {
                 notes within other notes
               </li>
               <li>
-                <strong>Syntax highlighting</strong> - light and dark mode available (based on the
-                beautiful <a href="https://taniarascia.github.io/new-moon/">New Moon theme</a>)
+                <strong>Syntax highlighting</strong> - light and dark mode available
               </li>
               <li>
                 <strong>Keyboard shortcuts</strong> - use the keyboard for all common tasks -
@@ -115,15 +111,8 @@ export const LandingPage: React.FC = () => {
               <li>
                 <strong>No tracking or analytics</strong> - &#39;nuff said
               </li>
-              <li>
-                <strong>GitHub integration</strong> - self-hosted option is available for
-                auto-syncing to a GitHub repository (not available in the demo)
-              </li>
             </ul>
           </div>
-        </div>
-        <div className="container">
-          <img src={darkScreen} alt="TakeNote App" className="screenshot" />
         </div>
       </section>
 
@@ -135,7 +124,7 @@ export const LandingPage: React.FC = () => {
           </p>
           <nav>
             <a
-              href="https://github.com/taniarascia/takenote"
+              href="https://github.com/sunnextt/tn-taker.git"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -147,13 +136,6 @@ export const LandingPage: React.FC = () => {
               rel="noopener noreferrer"
             >
               Issues
-            </a>
-            <a
-              href="https://github.com/taniarascia/takenote/graphs/contributors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contributors
             </a>
           </nav>
         </div>

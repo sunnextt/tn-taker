@@ -95,7 +95,7 @@ export default {
 
       response.status(200).send(data)
     } catch (error) {
-      response.status(400).send({ message: error.message })
+      response.status(400).send({ message: error })
     }
   },
 
@@ -135,7 +135,7 @@ async function createTakeNoteDataRepo(username: string, accessToken: string): Pr
   try {
     await SDK(Method.POST, `/user/repos`, accessToken, takenoteDataRepo)
   } catch (error) {
-    throw new Error(error)
+    throw new Error('something go wrong')
   }
 }
 
@@ -153,6 +153,6 @@ async function createInitialCommit(username: string, accessToken: string): Promi
       noteCommit
     )
   } catch (error) {
-    throw new Error(error)
+    throw new Error('something go wrong')
   }
 }

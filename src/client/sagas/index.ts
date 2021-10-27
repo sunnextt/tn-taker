@@ -2,11 +2,8 @@ import { all, put, takeLatest, select } from 'redux-saga/effects'
 import dayjs from 'dayjs'
 import axios from 'axios'
 
-import { requestCategories, requestNotes, requestSettings, saveState, saveSettings } from '@/api'
-import { loadCategories, loadCategoriesError, loadCategoriesSuccess } from '@/slices/category'
-import { loadNotes, loadNotesError, loadNotesSuccess } from '@/slices/note'
-import { sync, syncError, syncSuccess } from '@/slices/sync'
-import { login, loginSuccess, loginError, logout, logoutSuccess } from '@/slices/auth'
+import { SyncAction } from '../types'
+import { getSettings } from '../selectors'
 import {
   updateCodeMirrorOption,
   loadSettingsSuccess,
@@ -16,9 +13,12 @@ import {
   togglePreviewMarkdown,
   toggleSettingsModal,
   updateNotesSortStrategy,
-} from '@/slices/settings'
-import { SyncAction } from '@/types'
-import { getSettings } from '@/selectors'
+} from '../slices/settings'
+import { requestCategories, requestNotes, requestSettings, saveState, saveSettings } from '../api'
+import { loadCategories, loadCategoriesError, loadCategoriesSuccess } from '../slices/category'
+import { loadNotes, loadNotesError, loadNotesSuccess } from '../slices/note'
+import { sync, syncError, syncSuccess } from '../slices/sync'
+import { login, loginSuccess, loginError, logout, logoutSuccess } from '../slices/auth'
 
 const isDemo = process.env.DEMO
 
