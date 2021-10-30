@@ -1,6 +1,5 @@
 import { all, put, takeLatest, select } from 'redux-saga/effects'
 import dayjs from 'dayjs'
-import axios from 'axios'
 
 import { SyncAction } from '../types'
 import { getSettings } from '../selectors'
@@ -15,6 +14,7 @@ import {
   updateNotesSortStrategy,
 } from '../slices/settings'
 import { requestCategories, requestNotes, requestSettings, saveState, saveSettings } from '../api'
+import axios from '../api/axios-instance'
 import { loadCategories, loadCategoriesError, loadCategoriesSuccess } from '../slices/category'
 import { loadNotes, loadNotesError, loadNotesSuccess } from '../slices/note'
 import { sync, syncError, syncSuccess } from '../slices/sync'
@@ -33,7 +33,7 @@ function* loginUser() {
       yield put(loginSuccess(data))
     }
   } catch (error) {
-    yield put(loginError(error.message))
+    yield put(loginError('error login in'))
   }
 }
 
@@ -65,7 +65,7 @@ function* fetchNotes() {
 
     yield put(loadNotesSuccess({ notes: data, sortOrderKey: notesSortKey }))
   } catch (error) {
-    yield put(loadNotesError(error.message))
+    yield put(loadNotesError('error loading note'))
   }
 }
 
