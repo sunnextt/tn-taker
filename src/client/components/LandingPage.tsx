@@ -44,7 +44,7 @@ export const LandingPage: React.FC = () => {
                     and <b>not</b> persisted in any database or cloud.
                   </p>
                   <a className="button" href="/app">
-                    View Demo
+                    Start Demo
                   </a>
                 </div>
               </div>
@@ -102,14 +102,8 @@ export const LandingPage: React.FC = () => {
                 <strong>Prettify notes</strong> - use Prettier on the fly for your Markdown
               </li>
               <li>
-                <strong>No WYSIWYG</strong> - made for developers, by developers
-              </li>
-              <li>
                 <strong>No database</strong> - notes are only stored in the browser&#39;s local
                 storage and are available for download and export to you alone
-              </li>
-              <li>
-                <strong>No tracking or analytics</strong> - &#39;nuff said
               </li>
             </ul>
           </div>
@@ -129,13 +123,6 @@ export const LandingPage: React.FC = () => {
               rel="noopener noreferrer"
             >
               Source
-            </a>
-            <a
-              href="https://github.com/taniarascia/takenote/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Issues
             </a>
           </nav>
         </div>

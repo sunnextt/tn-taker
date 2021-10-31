@@ -11,6 +11,9 @@ import {
   UploadCloud,
 } from 'react-feather'
 
+import { LabelText } from '@resources/LabelText'
+import { TestID } from '@resources/TestID'
+
 import {
   toggleSettingsModal,
   updateCodeMirrorOption,
@@ -32,8 +35,6 @@ import { NotesSortKey } from '@/utils/enums'
 import { backupNotes, downloadNotes } from '@/utils/helpers'
 import { Tabs } from '@/components/Tabs/Tabs'
 import { TabPanel } from '@/components/Tabs/TabPanel'
-import { LabelText } from '@resources/LabelText'
-import { TestID } from '@resources/TestID'
 import { IconButtonUploader } from '@/components/SettingsModal/IconButtonUploader'
 
 export const SettingsModal: React.FC = () => {
@@ -41,9 +42,8 @@ export const SettingsModal: React.FC = () => {
   // Selectors
   // ===========================================================================
 
-  const { codeMirrorOptions, isOpen, previewMarkdown, darkTheme, notesSortKey } = useSelector(
-    getSettings
-  )
+  const { codeMirrorOptions, isOpen, previewMarkdown, darkTheme, notesSortKey } =
+    useSelector(getSettings)
   const { currentUser } = useSelector(getAuth)
   const { notes, activeFolder, activeCategoryId } = useSelector(getNotes)
   const { categories } = useSelector(getCategories)
@@ -264,31 +264,6 @@ export const SettingsModal: React.FC = () => {
                 This app has no tracking or analytics and does not retain any user data. Notes are
                 persisted in local storage and can be downloaded as Markdown files from the data
                 management tab.
-              </p>
-              <p>
-                TakeNote was created by{' '}
-                <a href="https://www.taniarascia.com" target="_blank" rel="noreferrer">
-                  Tania Rascia
-                </a>{' '}
-                with the help of{' '}
-                <a
-                  href="https://github.com/taniarascia/takenote/graphs/contributors"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  the open-source community
-                </a>
-                .
-              </p>
-              <p>
-                <a
-                  className="button"
-                  href="https://github.com/taniarascia/takenote"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View source
-                </a>
               </p>
             </TabPanel>
           </Tabs>

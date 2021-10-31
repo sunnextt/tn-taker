@@ -93,7 +93,7 @@ export const TakeNoteApp: React.FC = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>{getWebsiteTitle(activeFolder, activeCategory)}</title>
-        <link rel="canonical" href="https://takenote.dev" />
+        <link rel="canonical" href="" />
       </Helmet>
 
       <TempStateProvider>
