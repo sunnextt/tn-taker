@@ -19,19 +19,6 @@ The easiest note to find.`,
 const markdown = `# Welcome to Takenote!
 
 TakeNote is a free, open-source notes app for the web. It is a demo project only, and does not integrate with any database or cloud. Your notes are saved in local storage and will not be permanently persisted, but are available for download.
-
-
-## Features
-
-- **Plain text notes** - take notes in an IDE-like environment that makes no assumptions
-- **Markdown preview** - view rendered HTML
-- **Linked notes** - use \`{{uuid}}\` syntax to link to notes within other notes
-- **Syntax highlighting** - light and dark mode available (based on the beautiful
-- **Keyboard shortcuts** - use the keyboard for all common tasks - creating notes and categories, toggling settings, and other options
-- **Drag and drop** - drag a note or multiple notes to categories, favorites, or trash
-- **Multi-cursor editing** - supports multiple cursors and other
-- **Search notes** - easily search all notes, or notes within a category
-- **No database** - notes are only stored in the browser's local storage and are available for download and export to you alone
 `
 
 const welcomeNote = {
